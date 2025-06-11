@@ -16,9 +16,11 @@ public class Business_page {
     @Test
     public void Login1() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
-        WebDriverManager.chromedriver().setup();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
         WebDriver driver1 = new ChromeDriver(options);
+
 
         driver1.get("https://presolv360.com/");
         driver1.manage().window().maximize();
@@ -54,6 +56,6 @@ public class Business_page {
         Thread.sleep(3000);  // Replace with better wait if needed
 
         // Close browser
-        driver1.quit();
+//        driver1.quit();
     }
 }
