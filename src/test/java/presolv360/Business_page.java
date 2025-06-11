@@ -16,12 +16,9 @@ public class Business_page {
     @Test
     public void Login1() throws InterruptedException {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--remote-allow-origins=*");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver1 = new ChromeDriver(options);
-
-
         driver1.get("https://presolv360.com/");
         driver1.manage().window().maximize();
 
