@@ -34,7 +34,7 @@ public class Business_page {
 
         // Fill in Organization Name
         WebElement orgField = driver1.findElement(By.id("orgname"));
-        orgField.sendKeys("presolv");
+//        orgField.sendKeys("presolv");
 
         // Fill in Mobile Number
         WebElement numberField = driver1.findElement(By.id("number"));
