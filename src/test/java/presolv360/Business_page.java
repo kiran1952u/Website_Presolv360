@@ -25,8 +25,8 @@ public class Business_page {
         WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
 
         // Click on the Inquiry button
-        wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("/html/body/div[1]/div/div[2]/div[1]/section/div[1]/div/button"))).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(
+//                By.xpath("/html/body/div[1]/div/div[2]/div[1]/section/div[1]/div/button"))).click();
 
         // Fill in Full Name
         WebElement nameField = wait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
@@ -34,11 +34,11 @@ public class Business_page {
 
         // Fill in Organization Name
         WebElement orgField = driver1.findElement(By.id("orgname"));
-//        orgField.sendKeys("presolv");
+        orgField.sendKeys("presolv");
 
         // Fill in Mobile Number
         WebElement numberField = driver1.findElement(By.id("number"));
-//        numberField.sendKeys("9137884572");
+        numberField.sendKeys("9137884572");
 
         // Fill in Email
         WebElement emailField = driver1.findElement(By.id("email"));
