@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Test Suite">
+<suite name="Test Suite" parallel="false" thread-count="1">
     <test name="TestScriptsExecution">
         <classes>
-            <class name="presolv360.Business_page"></class>
+            <class name="presolv360.Business_page"/>
         </classes>
     </test>
 </suite>
