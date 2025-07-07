@@ -1,7 +1,7 @@
 <suite name="Test Suite" parallel="false" thread-count="1">
     <test name="TestScriptsExecution">
         <classes>
-            <class name="presolv360.Business_page"/>
+            <class name="presolv360.BusinessPage"/>
         </classes>
     </test>
 </suite>
