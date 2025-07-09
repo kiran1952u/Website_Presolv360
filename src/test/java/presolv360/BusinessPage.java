@@ -25,8 +25,8 @@ public class BusinessPage {
         WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(10));
 
         // Click on the Inquiry button
-        wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("/html/body/div[1]/div/div[2]/div[1]/section/div[1]/div/button"))).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(
+//                By.xpath("/html/body/div[1]/div/div[2]/div[1]/section/div[1]/div/button"))).click();
 
         // Fill in Full Name
         WebElement nameField = wait.until(ExpectedConditions.elementToBeClickable(By.id("name")));
